@@ -39,25 +39,25 @@ async function main() {
     // and for Fortnite, view https://gameflip.com/api/gameitem/inventory/GFPCFORTNITE
     
     // DO EDIT: Choose an image for your listing
-    let photo_url = 'https://gameflip.com' + '/img/items/rocket-league/key.png';
+    let photo_url = 'https://gameflip.com' + '/img/items/generic/icon_ingame_bundle.png';
     // Create an initial listing
     let query = {
       
         // DO EDIT: Put just 'Key' for example if you are selling one, otherwise write the quantity as so: Item Name | 10x
-        name: 'Keys | 10x',
-        description: 'Selling cheap keys!',
-        price: 1050, // price in cents
+        name: 'Bundle | 100x Very Rare ',
+        description: '100x Very Rare non-crate for craft TW Octane ;)',
+        price: 4400, // price in cents
         tags: [      // Must use the correct tag for search/filtering to function properly
-          "id: key",
-          "type: Key",
-          "quantity: 10x"
+          "id: bundle",
+          "type: custom",
+          "quantity: 100x"
         ],
         // Example with color
         // tags: [ "id: chakram", "type: Wheel", "color: Black" ]
 
         // MAYBE EDIT: Platform variation, change if you want to sell for example Fortnite (upc) on the PlayStation (platform) section instead
-        upc: GfApi.UPC.RL_XONE,
-        platform: GfApi.PLATFORM.XONE,
+        upc: GfApi.UPC.RL_PC,
+        platform: GfApi.PLATFORM.PC,
         shipping_within_days: GfApi.SHIPPING_WITHIN_DAYS.ONE,
         expire_in_days: GfApi.EXPIRE_IN_DAYS.SEVEN,
         
